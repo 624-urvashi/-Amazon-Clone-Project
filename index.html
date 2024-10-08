@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="address-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+            </div>
+            <div class="search-bar">
+                <select class="search-select">
+                    <option value="
+                        ">All</option>
+                    <option value="">Trending</option>
+                    <option value="">Best Seller</option>
+                    <option value="">New Release</option>
+                    <option value="">Movers And Shakers</option>
+                    <option value="">Echo & Alexa</option>
+                    <option value="">
+                        Amazon Prime Music
+                    </option>
+                    <option value="">Clothing</option>
+                    <option value="">Watches</option>
+                    <option value="">Bags&Luggage</option>
+                    <option value="">Sunglasses</option>
+
+                </select>
+                <input placeholder="Search-Accessories" class="Search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="lang border">
+                <select class="EN">
+                    <option value=""> EN</option>
+                    <option value=""> हिन्दी - HI - अनुवाद</option>
+                    <option value=""> தமிழ் - TA - மொழிபெயர்ப்பு</option>
+                    <option value=""> ಕನ್ನಡ - KN - ಭಾಷಾಂತರ</option>
+                    <option value=""> മലയാളം - ML - വിവർത്തനം</option>
+                    <option value="">বাংলা - BN - অনুবাদ</option>
+                    <option value="">मराठी - MR - भाषांतर</option>
+                </select>
+            </div>
+            <div class="nav-sign">
+                <p><span>Hello Sign in</span></p>
+                <p class="nav-second"><span>Account & Lists</span></p>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="orders boder"><span>Orders</span></p>
+            </div>
+
+            <div class="nav-cart  border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="cart.html">Cart</a>
+            </div>
+        </div>
+
+        <!-- PANEL -->
+        <div class="panel">
+            <div class="panel-all">
+
+                <i class="fa-solid fa-bars" id="fa-bars" onclick="toggleDropdown()"></i>
+                <span class="menu-text">All</span>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="https://www.amazon.in/s?k=trending+makeup&crid=1UUAPY57KOKIC&sprefix=trending+makeup%2Caps%2C229&ref=nb_sb_noss_1"
+                        style="text-decoration: none;">
+                        <p>Trending</p>
+                    </a>
+                    <a href="https://www.amazon.in/s?k=best+seller+books+in+english&crid=2N9PIG7FBSHKY&sprefix=best+seller+%2Caps%2C355&ref=nb_sb_ss_ts-doa-p_1_12"
+                        style="text-decoration: none;">
+                        <p>Best Seller</p>
+                    </a>
+                    <a href="https://www.amazon.in/s?k=new+reales&crid=34DD5DTKPC1XH&sprefix=new+reales%2Caps%2C235&ref=nb_sb_noss_2"
+                        style="text-decoration: none;">
+                        <p>New Release</p>
+                    </a>
+                    <a href="https://www.amazon.in/s?k=movers+and+shakers&crid=33VFA06SQ5Q4C&sprefix=movers+and+shakers%2Caps%2C207&ref=nb_sb_noss_1"
+                        style="text-decoration: none;">
+                        <p>Movers And Shakers</p>
+                    </a>
+                    <a href="https://www.amazon.in/s?k=echo+%26+alexa+devices&crid=1PK8DUCOGZB0X&sprefix=Echo+%26+ale%2Caps%2C229&ref=nb_sb_ss_ts-doa-p_2_10"
+                        style="text-decoration: none;">
+                        <p>Echo & Alexa</p>
+                    </a>
+                    <a href="https://www.amazon.in/s?k=Amazon+prime+music&crid=EBV6PYY9TH4M&sprefix=amazon+prime+music%2Caps%2C289&ref=nb_sb_noss_1"
+                        style="text-decoration: none;">
+                        <p>Amazon Prime Music</p>
+                    </a>
+                    <a href="https://www.amazon.in/s?k=clothing&crid=8WCMENLDB6FX&sprefix=clothing%2Caps%2C212&ref=nb_sb_noss_1"
+                        style="text-decoration: none;">
+                        <p>Clothing</p>
+                    </a>
+                    <a href="https://www.amazon.in/s?k=watches&crid=3IT9R0MQZZNYN&sprefix=watches%2Caps%2C208&ref=nb_sb_noss_1"
+                        style="text-decoration: none;">
+                        <p>Watches</p>
+                    </a>
+                    <a href="https://www.amazon.in/s?k=bags+and+luggage&crid=3D3TC3DSF83AE&sprefix=bags+and+luggage%2Caps%2C217&ref=nb_sb_noss_1"
+                        style="text-decoration: none;">
+                        <p>Bags&Luggage</p>
+                    </a>
+                    <a href="https://www.amazon.in/s?k=sunglasses&crid=NIJZX6BBW657&sprefix=sunglasses%2Caps%2C204&ref=nb_sb_noss_1"
+                        style="text-decoration: none;">
+                        <p>Sunglasses</p>
+                    </a>
+                    <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root"
+                        style="text-decoration: none;">
+                        <p>Amazon Prime</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="panel-options">
+                <a href="https://www.amazon.in/s?k=trending+makeup&crid=1UUAPY57KOKIC&sprefix=trending+makeup%2Caps%2C229&ref=nb_sb_noss_1"
+                    style="text-decoration: none; color: white;">
+                    <p>Trending</p>
+                </a>
+                <a href="https://www.amazon.in/s?k=fresh&crid=1747XYIILI4XO&sprefix=fresh%2Caps%2C220&ref=nb_sb_noss_1"
+                    style="text-decoration: none; color: white;">
+                    <p>Fresh</p>
+                </a>
+                <a href="https://www.amazon.in/s?k=mini+tv&crid=2OSS7NOHPB9Z0&sprefix=mini+tv%2Caps%2C213&ref=nb_sb_noss_1"
+                    style="text-decoration: none; color: white;">
+                    <p>Amazon miniTV</p>
+                </a>
+                <a href="https://www.amazon.in/b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3"
+                    style="text-decoration: none; color: white;">
+                    <p>Sell</p>
+                </a>
+                <a href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers"
+                    style="text-decoration: none; color: white;">
+                    <p>Best Sellers</p>
+                </a>
+                <a href="https://www.amazon.in/s?k=todays+deals&i=todays-deals&crid=3KF3CEEO0UUY1&sprefix=todays+deals%2Ctodays-deals%2C212&ref=nb_sb_noss_2"
+                    style="text-decoration: none; color: white;">
+                    <p>Today's Deals</p>
+                </a>
+                <a href="https://www.amazon.in/s?k=mobiles&i=todays-deals&crid=3ARNOMZY8DH5S&sprefix=mobiles%2Ctodays-deals%2C248&ref=nb_sb_noss_1"
+                    style="text-decoration: none; color: white;">
+                    <p>Mobiles</p>
+                </a>
+                <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help"
+                    style="text-decoration: none; color: white;">
+                    <p>Customer Service</p>
+                </a>
+                <a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember"
+                    style="text-decoration: none; color: white;">
+                    <p>Prime</p>
+                </a>
+                <a href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics"
+                    style="text-decoration: none; color: white;">
+                    <p>Electronics</p>
+                </a>
+                <a href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522"
+                    style="text-decoration: none; color: white;">
+                    <p>Fashion</p>
+                </a>
+            </div>
+            <div class="panel-deal">Shop Deals for Home Decor</div>
+        </div>
+    </header>
+
+    <!---- E-commerce -Slider--- -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="images/slide image 1.jpg" alt="Slide 1">
+                <div class="caption">
+                    <h2>Product 1</h2>
+                    <p>Description for product 1.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide image 2.jpg" alt="Slide 2">
+                <div class="caption">
+                    <h2>Product 2</h2>
+                    <p>Description for product 2.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide image 3.jpg" alt="Slide 3">
+                <div class="caption">
+                    <h2>Product 3</h2>
+                    <p>Description for product 3.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide image 4.jpg" alt="Slide 4">
+                <div class="caption">
+                    <h2>Product 4</h2>
+                    <p>Description for product 4.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide image 5.jpg" alt="Slide 5">
+                <div class="caption">
+                    <h2>Product 5</h2>
+                    <p>Description for product 5.</p>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+    </div>
+
+    <!---------- End  of Slider -->
+
+    <!-- content-section  1-->
+
+    <div class="content-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Starting
+                    ₹99 | Home improvement essentials</h2>
+                <div class="box-image" style="background-image: url('images/image2.jpeg');"></div>
+                <p>Explore all</p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Appliances for your home | Up to 55% off</h2>
+                <div class="box-image" style="background-image: url('images/washing\ machine.jpg');"></div>
+                <p>Explore all</p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Starting ₹149 | Headphones</h2>
+                <div class="box-image" style="background-image: url('images/buds.jpg');"></div>
+                <p>See all offers</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2> Automotive essentials | Up to 60% off</h2>
+                <div class="box-image" style="background-image: url('images/tier.jpg');"></div>
+                <p>Shop now</p>
+            </div>
+        </div>
+
+        <div class="box5 box">
+            <div class="box-content">
+                <h2>Starting ₹9999 | Home improvement essentials</h2>
+                <div class="box-image" style="background-image: url('images/microwave.jpg');"></div>
+                <p>Explore all</p>
+            </div>
+        </div>
+        <div class="box6 box">
+            <div class="box-content">
+                <h2>Up to 70% off | Home decor products from Emerging businesses</h2>
+                <div class="box-image" style="background-image: url('images/lights.jpg');"></div>
+                <p>Explore all</p>
+            </div>
+        </div>
+        <div class="box7 box">
+            <div class="box-content">
+                <h2>Starting ₹99 | Amazon Brands & more</h2>
+                <div class="box-image" style="background-image: url('images/vase.jpg');"></div>
+                <p>Shop now</p>
+            </div>
+        </div>
+        <div class="box8 box">
+            <div class="box-content">
+                <h2>Starting ₹99 | Home improvement essentials</h2>
+                <div class="box-image" style="background-image: url('images/refrigde.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="content-section">
+        <div class="box9 box">
+            <div class="box-content">
+                <h2>Best Seller Beauty</h2>
+                <div class="box-image" style="background-image: url('images/facewash.jpeg');"></div>
+                <p>Explore all</p>
+            </div>
+        </div>
+        <div class="box10 box">
+            <div class="box-content">
+                <h2>Up to 70% off| Home Decor products from Emerging businesses</h2>
+                <div class="box-image" style="background-image: url('images/lights.jpg');"></div>
+                <p>Explore all</p>
+            </div>
+        </div>
+        <div class="box11 box">
+            <div class="box-content">
+                <h2>Starting ₹99 | Amazon Brands & more</h2>
+                <div class="box-image" style="background-image: url('images/vase.jpg');"></div>
+                <p>Shop now</p>
+            </div>
+        </div>
+        <div class="box12 box">
+            <div class="box-content">
+                <h2>Starting ₹99 | Home improvement essentials</h2>
+                <div class="box-image" style="background-image: url('images/refrigde.jpg');"></div>
+                <p>See more</p>
+            </div>
+        </div>
+    </div>
+
+    <!--4 End content-section -->
+    <br>
+    <!-- Slider 2nd Start -->
+
+    <div class="slider-container-2">
+        <div class="slider-2">
+            <div class="slide-2">
+                <img src="images/slide image 4.jpg" alt="Slide 1">
+                <div class="caption-2">
+                    <h2>Product 1</h2>
+                    <p>Description for product 1.</p>
+                </div>
+            </div>
+            <div class="slide-2">
+                <img src="images/slide image 2.jpg" alt="Slide 2">
+                <div class="caption-2">
+                    <h2>Product 2</h2>
+                    <p>Description for product 2.</p>
+                </div>
+            </div>
+            <div class="slide-2">
+                <img src="images/slide image 3.jpg" alt="Slide 3">
+                <div class="caption-2">
+                    <h2>Product 3</h2>
+                    <p>Description for product 3.</p>
+                </div>
+            </div>
+            <div class="slide-2">
+                <img src="images/slide image 5.jpg" alt="Slide 4">
+                <div class="caption-2">
+                    <h2>Product 4</h2>
+                    <p>Description for product 4.</p>
+                </div>
+            </div>
+            <div class="slide-2">
+                <img src="images/slide image 1.jpg" alt="Slide 5">
+                <div class="caption-2">
+                    <h2>Product 5</h2>
+                    <p>Description for product 5.</p>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn-2">&#10094;</button>
+        <button class="next-btn-2">&#10095;</button>
+    </div>
+    <br>
+
+    <hr>
+    <div class="sign-in">
+        <ul>
+            <li>See personalized recommendations</li>
+            <li><button class="sign-in-btn">Sign in</button></li>
+            <li>New customer? <a href="#">Start here</a></li>
+        </ul>
+    </div>
+
+    <hr>
+    <footer>
+        <div class="foot-panel1">
+            <a href="#">
+                <p>Back to top</p>
+            </a>
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>About Us</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
+            </ul>
+
+            <ul>
+                <p>Connect with Us</p>
+                <a>Facebook</a>
+                <a>Twitter</a>
+                <a>Instagram</a>
+            </ul>
+
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell on Amazon</a>
+                <a>Careers</a>
+                <a>Sell under Amazon Accelerator</a>
+                <a>Protect and Build Your Brand</a>
+                <a>Amazon Global Selling</a>
+                <a>Supply to Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Fulfilment by Amazon</a>
+                <a>Advertise Your Products</a>
+
+            </ul>
+
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Your Account</a>
+                <a>Returns Centre</a>
+                <a>Recalls and Product Safety Alerts</a>
+                <a>100% Purchase Protection</a>
+                <a>Amazon App Download</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <div class="foot-panel-3">
+            <div class="logo2"></div>
+        </div>
+
+        <div class="foot-panel-4">
+            <div class="foot-option">
+                <a>Condition of Use & Sale</a>
+                <a>Privacy Notice</a>
+                <a>Interest-Based Ads
+                </a>
+            </div>
+
+            <div class="copyright">© 1996-2024, Amazon.com, Inc. or its affiliates</div>
+
+        </div>
+    </footer>
+    <!-- Slider 2nd End -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
